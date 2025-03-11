@@ -171,4 +171,7 @@ cython_debug/
 .pypirc
 
 # Training data
-maestro-v3.0.0/
+data/
+
+# Exports
+plots/
