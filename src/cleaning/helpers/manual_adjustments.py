@@ -8,6 +8,5 @@ def manual_adjustments(title):
     title = re.sub(r'\bin 3\b', 'in e', title)
     title = re.sub(r'\besp\b', 'espagnole', title, flags=re.IGNORECASE)
     title = re.sub(r'\bspanish\b', 'espagnole', title, flags=re.IGNORECASE)
-    # title = re.sub(r'\b\(?complete\)?\b', '', title, flags=re.IGNORECASE)
 
     return title

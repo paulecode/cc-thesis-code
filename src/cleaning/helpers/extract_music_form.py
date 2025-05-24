@@ -30,7 +30,6 @@ def extract_music_form(row: pd.Series) -> pd.Series:
     title = row['standardized_title']
 
     for key in music_form_dict:
-        # if key in title:
         if re.search(fr'\b{key}\b', title, re.IGNORECASE):
             new_row['music_form'] = music_form_dict[key]
             new_title = re.sub(fr'\s?\b{key}\b', '', title, flags=re.IGNORECASE).strip()

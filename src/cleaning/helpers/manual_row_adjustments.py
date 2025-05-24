@@ -14,7 +14,6 @@ def manual_row_adjustments(row: pd.Series) -> pd.Series:
 
     if row['standardized_title'] == 'espagnole':
         row['s_number'] = '254'
-        # row['no_number'] = 1
 
     if row['standardized_title'] == 'hungarian':
         row['s_number'] = '244'
