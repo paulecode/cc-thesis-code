@@ -11,3 +11,5 @@ st.sidebar.header("Exploration")
 df = pd.read_csv("data/processed/maestro-v3.0.0_filtered.csv")
 
 composer_summary(df)
+
+general_comparison_section(df)
