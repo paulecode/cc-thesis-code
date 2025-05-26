@@ -1,7 +1,7 @@
 import streamlit as st
 
 def select_piece_list(df, **kwargs):
-    columns=['canonical_composer', 'canonical_title', 'music_form']
+    columns=['canonical_composer', 'canonical_title', 'music_form', 'duration']
 
     with st.expander("Select a piece"):
         selection = st.dataframe(
