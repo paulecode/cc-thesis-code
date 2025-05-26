@@ -6,14 +6,14 @@ from helpers.mfcc_plot import draw_mfcc
 from helpers.stft_plot import draw_stft
 from helpers.fft_plot import draw_fft
 
-def draw_chart(y, sr, chart_selection):
+def draw_chart(y, sr, normalize, chart_selection):
     match(chart_selection):
         case 'None':
             pass
         case 'RMS':
-            draw_rms(y)
+            draw_rms(y, normalize)
         case 'Waveform':
-            draw_waveform(y, sr)
+            draw_waveform(y, sr, normalize)
         case 'Spectrogram':
             draw_spectrogram(y, sr)
         case 'Mel-Spectrogram':
